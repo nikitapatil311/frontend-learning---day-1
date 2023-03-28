@@ -1,0 +1,103 @@
+
+/*Javascript is one of the popular programming languages.
+
+It is used to provide ineractivity to web pages 
+Java Script Introduction
+
+JAVAscript functions - They are the group of values which gets executed whenever its called or invoked
+
+
+*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Course - Day 1</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo3">here is the paragraph</p>
+    /*JavaScript can change HTML CSS*/
+    <button type="button" onclick="document.getElementById(`demo3`).style.fontSize = `35px`"> Click Here!!! </button>
+    <p id="demo2">A Paragraph</p>
+    <button type="button" onclick="myfunction()">Try it</button>
+
+    /* <br>JavaScript Display Possibilities 1. innerHTML 2. document.write 3. window.alert 4. console.log*/
+
+    <p id="demo4">Hello</p>
+    <p id="demo5">Hello</p>
+
+    /* Javascripts instructions are called as statements and it consists of<br>1. values 2. operators 3. expressions 4. keywords and 5. comments. */
+    <br>keywords - var, let, const, return, for, function, try,if, switch
+    <br> javascript uses keywords to declare variables 
+
+
+    <p id="demo6"></p>
+    <button type="button" onclick="add()">click here to add</button>
+
+    
+
+
+    /*Idendifiers are used to name variables, keywords and functions*/
+    /*errors - try and catch*/
+    <p id="demo7"></p>
+    <button type="button" onclick="Car()">Try Catch error</button>
+
+    /*const arrays*/
+    <p id="demo8"></p>
+
+
+    <script>
+        var car = "volvo";
+        document.getElementById("demo").innerHTML = car;
+        document.getElementById("demo1").innerHTML = "Hello World";
+       
+        function myfunction(){
+            document.getElementById("demo2").innerHTML =
+             "Paragraph changed";
+        }
+
+        document.getElementById("demo4").innerHTML = 
+        4 + 5; 
+        document.getElementById("demo5").innerHTML = document.write(6 + 6);
+
+      //  window.alert(9+9);
+
+        function add(){
+            let a , b, c;
+            a =10; b=20; c=a + b;
+            document.getElementById("demo6").innerHTML = c;
+            
+
+        }
+        function variables(){
+            let x= 10;
+        }
+
+        function Car(){
+            try{
+                const pi = 3.142;
+                pi = 3.1;
+
+            }
+            catch(err){
+                document.getElementById("demo7").innerHTML = err;
+            }
+        }
+
+        const cars = ["i20" , "audi", "Maruti"];
+        cars[0] = "Toyota";
+        cars.push("Benz");
+        document.getElementById("demo8").innerHTML = cars;
+
+
+
+
+
+    </script>
+</body>
+</html>
+
